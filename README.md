@@ -13,12 +13,12 @@
 <div align="center">
   <h3>📹 Application Demo</h3>
   <video width="800" controls loop autoplay>
-    <source src="/root/myproject/kafka_to_streamlit/images/breast-cancer.mp4" type="video/mp4">
+    <source src="images/breast-cancer.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   
   <h3>🔄 Real-time Data Flow</h3>
-  <img src="/root/myproject/kafka_to_streamlit/images/kafka_producer.png" alt="Data Flow" width="800">
+  <img src="images/kafka_producer.png" alt="Data Flow" width="800">
 </div>
 
 ## 🌟 Overview
@@ -74,22 +74,22 @@ A cutting-edge real-time breast cancer prediction system that combines machine l
 ## 📋 System Architecture
 
 <div align="center">
-  <img src="/root/myproject/kafka_to_streamlit/images/bigDataArchitecture.png" alt="System Architecture" width="800">
+  <img src="images/bigDataArchitecture.png" alt="System Architecture" width="800">
 </div>
 
 ## 📊 Data Flow
 
 <div align="center">
   <h3>🔄 Real-time Data Processing Pipeline</h3>
-  <img src="/root/myproject/kafka_to_streamlit/images/kafka_producer.png" alt="Kafka Producer Interface" width="800">
+  <img src="images/kafka_producer.png" alt="Kafka Producer Interface" width="800">
   <p><em>Kafka Producer sending real-time breast cancer data</em></p>
   
   <h3>⚡ Spark Processing</h3>
-  <img src="/root/myproject/kafka_to_streamlit/images/spark_processing.png" alt="Spark Processing" width="800">
+  <img src="images/spark_processing.png" alt="Spark Processing" width="800">
   <p><em>Spark processing the streaming data and preparing for predictions</em></p>
   
   <h3>🎯 Prediction Results</h3>
-  <img src="/root/myproject/kafka_to_streamlit/images/predictions.png" alt="Prediction Results" width="800">
+  <img src="images/predictions.png" alt="Prediction Results" width="800">
   <p><em>Real-time prediction results with confidence scores</em></p>
 </div>
 
