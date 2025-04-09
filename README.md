@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/project-banner.png" alt="Project Banner" width="100%"/>
+
   <h1>🏥 Real-time Breast Cancer Monitoring System</h1>
   <p>A cutting-edge ML-powered system for early cancer detection and real-time monitoring</p>
 
@@ -301,6 +301,8 @@ MIT License - See [LICENSE](LICENSE) for details
     <img src="https://komarev.com/ghpvc/?username=itsAimad&color=brightgreen" alt="Profile Views"/>
   </p>
 </div> 
+
+
 
 
 
