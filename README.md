@@ -1,9 +1,6 @@
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Real-time%20Breast%20Cancer%20Monitoring%20System&fontSize=40&fontAlignY=35&animation=twinkling&fontColor=white&desc=A%20cutting-edge%20ML-powered%20system%20for%20early%20cancer%20detection%20and%20real-time%20monitoring&descAlignY=60" width="100%"/>
 
-  <h1>🏥 Real-time Breast Cancer Monitoring System</h1>
-  <p>A cutting-edge ML-powered system for early cancer detection and real-time monitoring</p>
-
-  <!-- Badges with modern design -->
   <p>
     <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python Version"/>
     <img src="https://img.shields.io/badge/Streamlit-1.0+-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit Version"/>
@@ -13,23 +10,24 @@
   </p>
 </div>
 
+
+
 ## 🎬 Project Overview
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
-    <img src="kafka_to_streamlit/images/thumbnail.png" alt="Project Overview Video" width="600"/>
-  </a>
-  <p><em>Click to watch the project overview video</em></p>
+  <img src="kafka_to_streamlit/images/thumbnail.png" alt="Project Overview" width="800"/>
 </div>
 
-## ✨ Interactive Demo
+## 🏗️ System Architecture
 
-<div align="center">
-  <h3>Live System Demo For a Test Case's Tab</h3>
-  <video width="800" controls loop autoplay>
-    <source src="kafka_to_streamlit/images/breast-cancer.mp4" type="video/mp4">
-  </video>
-  <p><em>Real-time prediction and monitoring in action</em></p>
+<div >
+  <img src="kafka_to_streamlit/images/bigDataArchitecture.png" alt="System Architecture" width="800"/>
+  
+  ### Key Components:
+  - **Data Ingestion**: Kafka Producer streams real-time medical data
+  - **Processing Layer**: Apache Spark handles data cleaning and ML predictions
+  - **Storage Layer**: PostgreSQL for predictions, Hadoop for historical data
+  - **Visualization**: Streamlit for UI, Grafana for monitoring
 </div>
 
 ## 💫 Key Features
@@ -41,7 +39,7 @@
         <img src="https://img.icons8.com/color/48/000000/dashboard-layout.png"/>
         <br /><strong>Interactive Dashboard</strong>
         <br />Real-time monitoring & visualization
-        <br /><img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/real-time.png" width="200"/>
+        <br /><img src="kafka_to_streamlit/images/real-time.png" width="200"/>
       </td>
       <td align="center">
         <img src="https://img.icons8.com/color/48/000000/statistics.png"/>
@@ -53,53 +51,33 @@
         <img src="https://img.icons8.com/color/48/000000/visual-game-boy.png"/>
         <br /><strong>Advanced Visualizations</strong>
         <br />3D plots & heatmaps
-        <br /><img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/heatmap.png" width="200"/>
+        <br /><img src="kafka_to_streamlit/images/heatmap.png" width="200"/>
       </td>
     </tr>
   </table>
-</div>
-
-## 🏗 System Architecture
-
-<div align="center">
-  <img src="kafka_to_streamlit/images/bigDataArchitecture.png" alt="System Architecture" width="800"/>
-  <p><em>Comprehensive system architecture showing data flow and component interaction</em></p>
-  
-  <details>
-    <summary>📝 Detailed Architecture Explanation</summary>
-    <p>Detailed breakdown of each component and their interactions</p>
-  </details>
-</div>
-
-## 📊 Data Flow
-
-<div align="center">
-  <h3>🔄 Real-time Data Processing Pipeline</h3>
-  <img src="kafka_to_streamlit/images/dashboard.png" alt="Real-time Processing" width="800">
-  <p><em>Real-time data processing and prediction pipeline</em></p>
   
   <h3>⚡ System Features</h3>
   <table>
     <tr>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/real-time.png" width="200"/>
+        <img src="kafka_to_streamlit/images/real-time.png" width="200"/>
         <br /><strong>Real-time Monitoring</strong>
         <br />Live predictions & updates
       </td>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/latest.png" width="200"/>
+        <img src="kafka_to_streamlit/images/latest.png" width="200"/>
         <br /><strong>Latest Predictions</strong>
         <br />Instant results visualization
       </td>
       <td align="center">
-      <img src="kafka_to_streamlit/images/prediction_confidence.png" width="200"/>
+        <img src="kafka_to_streamlit/images/prediction_confidence.png" width="200"/>
         <br /><strong>Advanced Analytics</strong>
         <br />Detailed data insights
       </td>
     </tr>
   </table>
-  
 </div>
+
 
 ## 🛠️ Tech Stack
 
@@ -119,6 +97,7 @@
     </tr>
   </table>
 </div>
+
 
 ## 🚀 Installation & Setup Guide
 
@@ -175,12 +154,7 @@ kafka-topics.sh --create --topic prediction-results-topic \
 kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 
-5. **Install Python Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-6. **Start Spark Streaming**
+5. **Start Spark Streaming**
 ```bash
 # Navigate to project directory
 cd /root/myproject/kafka_to_streamlit
@@ -191,36 +165,10 @@ spark-submit --jars /root/myproject/postgresql-42.6.0.jar \
              SparkStreaming.py
 ```
 
-7. **Launch Streamlit Application**
+6. **Launch Streamlit Application**
 ```bash
 # In a new terminal
 streamlit run App.py
-```
-
-### 🔍 Verification Steps
-
-1. Check Hadoop services:
-```bash
-jps
-```
-Expected output should show: NameNode, DataNode, ResourceManager, etc.
-
-2. Verify Kafka topics:
-```bash
-kafka-topics.sh --describe --bootstrap-server localhost:9092
-```
-
-3. Monitor Kafka topics:
-```bash
-# For prediction-topic
-kafka-console-consumer.sh --bootstrap-server localhost:9092 \
-                         --topic prediction-topic \
-                         --from-beginning
-
-# For prediction-results-topic
-kafka-console-consumer.sh --bootstrap-server localhost:9092 \
-                         --topic prediction-results-topic \
-                         --from-beginning
 ```
 
 ### 📊 Accessing Services
@@ -265,17 +213,9 @@ chmod +x start-kafka-zookeeper.sh
 ## 👨‍💻 Author
 
 <div align="center">
-
   <h3>Aimad Bouya</h3>
-  <p>AI & Data Enginnering Student</p>
-</div>
-
-## 📄 License
-MIT License - See [LICENSE](LICENSE) for details
-
-<div align="center">
-  <br />
-  <p>Made with ❤️ for better healthcare</p>
+  <p>AI & Data Engineering Student</p>
+  
   <p>
     <a href="">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -287,20 +227,22 @@ MIT License - See [LICENSE](LICENSE) for details
       <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
     </a>
   </p>
-  
-  <!-- Repository Stats -->
-  <p>
-    <img src="https://img.shields.io/github/watchers/itsAimad/BigDataProject?style=social" alt="Watchers"/>
-    <img src="https://img.shields.io/github/stars/itsAimad/BigDataProject?style=social" alt="Stars"/>
-    <img src="https://img.shields.io/github/forks/itsAimad/BigDataProject?style=social" alt="Forks"/>
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FitsAimad%2FBigDataProject&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false"/>
-  </p>
+</div>
 
-  <!-- Profile Views -->
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=itsAimad&color=brightgreen" alt="Profile Views"/>
-  </p>
+<div align="center">
+  
+  <br/>
+  <img src="https://komarev.com/ghpvc/?username=itsAimad&label=Profile%20views&color=0e75b6&style=flat" alt="itsAimad" />
+  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=Made%20with%20❤️%20for%20better%20healthcare&fontSize=20&fontAlignY=80" width="100%"/>
 </div> 
+
+
+
+
+
+
+
 
 
 
