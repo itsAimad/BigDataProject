@@ -35,27 +35,25 @@
 ## 💫 Key Features
 
 <div align="center">
-  <img src="images/features-overview.gif" alt="Features Overview" width="100%"/>
-  
   <table>
     <tr>
       <td align="center">
         <img src="https://img.icons8.com/color/48/000000/dashboard-layout.png"/>
         <br /><strong>Interactive Dashboard</strong>
         <br />Real-time monitoring & visualization
-        <br /><img src="kafka_to_streamlit/images/real-time.png" width="200"/>
+        <br /><img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/real-time.png" width="200"/>
       </td>
       <td align="center">
-        <img src="https://img.icons8.com/color/48/000000/processing.png"/>
-        <br /><strong>Real-time Processing</strong>
-        <br />Live predictions & updates
-        <br /><img src="kafka_to_streamlit/images/latest.png" width="200"/>
+        <img src="https://img.icons8.com/color/48/000000/statistics.png"/>
+        <br /><strong>Feature Importance</strong>
+        <br />Key feature analysis & impact
+        <br /><img src="kafka_to_streamlit/images/importance.png" width="200"/>
       </td>
       <td align="center">
         <img src="https://img.icons8.com/color/48/000000/visual-game-boy.png"/>
         <br /><strong>Advanced Visualizations</strong>
         <br />3D plots & heatmaps
-        <br /><img src="kafka_to_streamlit/images/heatmap.png" width="200"/>
+        <br /><img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/heatmap.png" width="200"/>
       </td>
     </tr>
   </table>
@@ -77,7 +75,7 @@
 
 <div align="center">
   <h3>🔄 Real-time Data Processing Pipeline</h3>
-  <img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/realtime.png" alt="Real-time Processing" width="800">
+  <img src="kafka_to_streamlit/images/dashboard.png" alt="Real-time Processing" width="800">
   <p><em>Real-time data processing and prediction pipeline</em></p>
   
   <h3>⚡ System Features</h3>
@@ -94,16 +92,13 @@
         <br />Instant results visualization
       </td>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/heatmap.png" width="200"/>
+      <img src="kafka_to_streamlit/images/prediction_confidence.png" width="200"/>
         <br /><strong>Advanced Analytics</strong>
         <br />Detailed data insights
       </td>
     </tr>
   </table>
   
-  <h3>🎯 Prediction Results</h3>
-  <img src="https://raw.githubusercontent.com/itsAimad/BigDataProject/main/kafka_to_streamlit/images/predictions.png" alt="Prediction Results" width="800">
-  <p><em>Real-time prediction results with confidence scores</em></p>
 </div>
 
 ## 🛠️ Tech Stack
@@ -306,5 +301,6 @@ MIT License - See [LICENSE](LICENSE) for details
     <img src="https://komarev.com/ghpvc/?username=itsAimad&color=brightgreen" alt="Profile Views"/>
   </p>
 </div> 
+
 
 
