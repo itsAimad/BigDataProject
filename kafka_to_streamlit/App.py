@@ -1523,7 +1523,7 @@ def main():
             input_data = add_sidebar()
             st.markdown("<h6 id='tutorial'>Check This video To understand How</h6>",unsafe_allow_html=True)
             st.video("/root/myproject/kafka_to_streamlit/images/breast-cancer.mp4",loop=True,autoplay=True)
-
+        
 
 
             with st.container():
